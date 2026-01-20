@@ -1,0 +1,20 @@
+/* Universal reset to ensure the app fills the window */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Base style for the container */
+.app-container {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 12px;
+  /* Optional: add a subtle border to see the container bounds */
+  border: 1px solid rgba(128, 128, 128, 0.2); 
+}
