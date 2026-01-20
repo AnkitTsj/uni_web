@@ -1,0 +1,92 @@
+/* Center the entire application on the screen */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #1a1a1a; /* Dark background */
+  margin: 0;
+}
+
+/* Main Container */
+.container {
+  width: 100%;
+  max-width: 400px; /* Prevents the list from getting too wide */
+  padding: 2rem;
+  background: #242424;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+/* Input and Add Button alignment */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+input {
+  flex: 1; /* Takes up remaining space */
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #1a1a1a;
+  color: white;
+  outline: none;
+}
+
+/* Professional List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between; /* Pushes text to left, button to right */
+  align-items: center;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  background: #2f2f2f;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+li:hover {
+  transform: translateX(5px); /* Subtle interaction hint */
+}
+
+/* Button Styling */
+button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.add-btn {
+  background-color: #646cff;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #ff4646;
+  color: white;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+}

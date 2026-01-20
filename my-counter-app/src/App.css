@@ -1,0 +1,75 @@
+
+/* Ensure the browser window gives the app space to move */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Your centering container */
+.center-wrapper {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; /* Vertical alignment */
+  align-items: center;     /* Horizontal alignment */
+  height: 80vh;           /* Viewport Height */
+  text-align: center; 
+}
+
+
+.button-group {
+  display: flex;
+  gap: 18px; /* Spacing between buttons */
+  margin-top: 20px;
+}
+
+button {
+  background-color: #646cff; /* Standard React/Vite purple */
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover state: Lighter color and slight lift */
+button:hover {
+  background-color: #747bff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Active state: "Pressed" effect when clicked */
+button:active {
+  transform: translateY(0);
+  background-color: #535bf2;
+}
+
+/* Specific styling for the decrease button if you want it to look different */
+button:last-child {
+  background-color: #f44336; /* Red for subtraction */
+}
+
+button:last-child:hover {
+  background-color: #ff5252;
+}
+
+
+p {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #ffffff; /* Contrast against the dark background */
+}
+
+h2 {
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
